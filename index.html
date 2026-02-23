@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Bday</title>
+    <meta charset="UTF-8">
+	 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <style>
+        body {
+            margin: 0;
+            background-color: #830d17;
+            color: white;
+            font-family: Arial, sans-serif;
+            overflow-x: hidden;
+        }
+		#tsparticles {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+        }
+        #game-section {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+		h1 {
+		    margin-bottom: 5px;
+			}
+    </style>
+</head>
+<body>
+<div id="tsparticles"></div>
+    <div id="game-section">
+        <h1 class="animate__animated animate__rubberBand " style="font-size:60px;">YOOO ZAINYY</h1>
+        <p class="animate__animated animate__fadeIn animate__delay-1s">click here</p>
+        <button id="startBtn"class="animate__animated animate__fadeIn animate__delay-2s"> Start</button>
+    </div>
+
+    
+<script src="https://cdn.jsdelivr.net/npm/tsparticles@2/tsparticles.bundle.min.js"></script>
+<script>
+tsParticles.load("tsparticles", {
+  particles: {
+    number: { value: 78 },
+    color: { value: "#f9acb3" },
+    shape: { type: "star" }, 
+    size: { value: 8 },
+    move: { enable: true, speed: 3 }
+  },
+  interactivity: {
+    events: {
+      onhover: { enable: true, mode: "repulse" },
+      onclick: { enable: true, mode: "push" }
+    }
+  }
+});
+</script>
+
+</body>
+</html>
